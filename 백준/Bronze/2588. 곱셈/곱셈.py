@@ -1,0 +1,7 @@
+A=input()
+a,b,c=input()
+A,a,b,c = int(A),int(a),int(b),int(c)
+print(A*c)
+print(A*b)
+print(A*a)
+print((A*a)*100+(A*b)*10+(A*c))
