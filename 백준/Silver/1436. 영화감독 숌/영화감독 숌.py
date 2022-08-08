@@ -1,10 +1,9 @@
 N = int(input())
-Count = 0
 Base = 666
-while Count < N :
+while N :
     if "666" in str(Base):
-        Count += 1
-    if Count == N:
-        print(Base)
+        N -= 1
     Base += 1
+
+print(Base-1)
     
