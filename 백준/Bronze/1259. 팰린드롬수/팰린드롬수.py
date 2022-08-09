@@ -4,11 +4,8 @@ while True:
         break
     for i in range(len(N)//2+len(N)%2):
         if N[i] == N[-(i+1)]:
-            b=1
+            b="yes"
         else:
-            b=0
+            b="no"
             break
-    if b==1:
-        print("yes")
-    else:
-        print("no")
+    print(b)
