@@ -1,26 +1,14 @@
 while True:
-    a = input()
-    if a=="0":
+    N = input()
+    if N=="0":
         break
-    if (len(a)%2) == 0:
-        for i in range(len(a)//2):
-            if a[i] == a[-(i+1)]:
-                b=1
-            else:
-                b=0
-                break
-        if b==1:
-            print("yes")
+    for i in range(len(N)//2+len(N)%2):
+        if N[i] == N[-(i+1)]:
+            b=1
         else:
-            print("no")
+            b=0
+            break
+    if b==1:
+        print("yes")
     else:
-        for i in range((len(a)//2)+1):
-            if a[i] == a[-(i+1)]:
-                b=1
-            else:
-                b=0
-                break
-        if b==1:
-            print("yes")
-        else:
-            print("no")
+        print("no")
