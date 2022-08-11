@@ -1,12 +1,10 @@
 import sys
-
-N = int(input())
-Table = [0] * 10000
-
-for i in range(N):
-    Table[int(sys.stdin.readline())-1] += 1
+Inp = sys.stdin.readline
+Table = [0] * 10001
+for _ in range(int(Inp())):
+    Table[int(int(Inp()))] += 1
     
-for i in range(10000):
+for i in range(1, 10001):
     if Table[i] != 0:
-        for j in range(Table[i]):
-            print(i+1)
+        for _ in range(Table[i]):
+            print(i)
