@@ -6,4 +6,4 @@ for _ in range(int(Inp())):
     
 for i, j in enumerate(T):
     for _ in range(j):
-        print(i)
+        sys.stdout.write(f"{i}\n")
