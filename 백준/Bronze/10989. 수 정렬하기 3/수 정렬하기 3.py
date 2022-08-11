@@ -1,10 +1,10 @@
 import sys
-Inp = sys.stdin.readline
-Table = [0] * 10001
+Inp=sys.stdin.readline
+T=[0]*5**6
 for _ in range(int(Inp())):
-    Table[int(int(Inp()))] += 1
+    T[int(Inp())] += 1
     
-for i in range(1, 10001):
-    if Table[i] != 0:
-        for _ in range(Table[i]):
+for i, j in enumerate(T):
+    if T[i] != 0:
+        for _ in range(j):
             print(i)
