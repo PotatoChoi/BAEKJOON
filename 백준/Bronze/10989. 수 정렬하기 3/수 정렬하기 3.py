@@ -5,6 +5,5 @@ for _ in range(int(Inp())):
     T[int(Inp())] += 1
     
 for i, j in enumerate(T):
-    if T[i] != 0:
-        for _ in range(j):
-            print(i)
+    for _ in range(j):
+        print(i)
