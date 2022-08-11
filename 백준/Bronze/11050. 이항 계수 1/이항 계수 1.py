@@ -6,4 +6,4 @@ def Factorial(a):
         b*=i
     return b
 
-print(int(Factorial(N)/(Factorial(K) * Factorial(N-K))))
+print(Factorial(N)//(Factorial(K) * Factorial(N-K)))
