@@ -1,6 +1,6 @@
 import sys
 Inp=sys.stdin.readline
-T=[0]*5**6
+T=[0]*10001
 for _ in range(int(Inp())):
     T[int(Inp())] += 1
     
