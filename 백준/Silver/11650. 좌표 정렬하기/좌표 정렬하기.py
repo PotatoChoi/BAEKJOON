@@ -5,4 +5,4 @@ Table = []
 
 Table = [list(map(int, sys.stdin.readline().split())) for _ in range(N)]
 
-[print(i[0], i[1]) for i in sorted(Table)]
+[sys.stdout.write(f"{i[0]} {i[1]}\n") for i in sorted(Table)]
