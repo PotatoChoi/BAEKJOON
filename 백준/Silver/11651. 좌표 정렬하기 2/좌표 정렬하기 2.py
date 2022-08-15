@@ -1,10 +1,11 @@
 import sys
 
-N = int(input())
+Inp = sys.stdin.readline
+
 Table = []
 
-for _ in range(N):
-    x, y = map(int, sys.stdin.readline().split())
+for _ in  range(int(Inp())):
+    x, y = map(int, Inp().split())
     Table.append([y,x])
 
 [print(i[1],i[0]) for i in sorted(Table)]
