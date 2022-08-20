@@ -1,11 +1,10 @@
 import sys
 
 N = int(input())
-prt = sys.stdin.readline
 
-A = set(map(int, prt().split()))
+A = set(map(int, sys.stdin.readline().split()))
 M = int(input())
-Mlist = list(map(int, prt().split()))
+Mlist = list(map(int, sys.stdin.readline().split()))
 
 for i in Mlist :
     print(1 if i in A else 0)
