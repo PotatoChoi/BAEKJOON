@@ -20,4 +20,4 @@ for _ in range(n):
 if No == True:
     print('NO')
 else:
-    print(*result, sep='\n')
+    print('\n'.join(result))
