@@ -2,6 +2,7 @@ def solution(s):
     answer = ''
     s = s.split(' ')
     for i in range(len(s)):
-        s[i] = s[i].capitalize()
-    answer = ' '.join(s)
+        answer += s[i].capitalize() + ' '
+    
+    answer = answer[:-1]
     return answer
